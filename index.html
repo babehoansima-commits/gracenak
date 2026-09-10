@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FAF6F1">
+<title>Grâce Nak— Boutique en ligne</title>
+<meta name="description" content="Sélection de pièces vintage uniques, à prix doux. Commandez directement sur WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════ TOPBAR ═══════════ -->
+<div class="topbar">
+  <span class="topbar__mobile">Livraison gratuite</span>
+  <span class="topbar__desktop">Livraison gratuite · Pièces uniques · Nouveautés </span>
+</div>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header class="header">
+  <div class="header__inner">
+    <a href="#" class="header__logo">Grâce <em>Nak</em></a>
+
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="#collection">Collection</a>
+ 
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="header__icon" aria-label="Rechercher">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>
+      </button>
+      <button class="header__icon" aria-label="Panier">
+        <svg viewBox="0 0 24 24"><path d="M6 7h12l-1 12H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+
+  <div class="hero__bg">
+    <img class="hero__bg-img"
+         src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1800&q=90"
+         alt=""
+         loading="eager"
+         decoding="async">
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <!-- Haut : édition -->
+  <div class="hero__top">
+    <span class="hero__edition">
+      <span class="hero__edition-num">Édition N°01</span>
+      <span class="hero__edition-sep">◆</span>
+      <span>Collection </span>
+    </span>
+  </div>
+
+  <!-- Bas : contenu -->
+  <div class="hero__bottom">
+    <h1 class="hero__title">
+      <span class="hero__line"><span>Des pièces <em>uniques</em>,</span></span>
+      <span class="hero__line"><span>à prix <em>bas</em>.</span></span>
+    </h1>
+
+    <p class="hero__sub">
+    Des vêtements de qualité, à prix accessibles. Commandez en un clic sur WhatsApp.
+    </p>
+
+    <a href="#collection" class="hero__cta">
+      <span>Voir la collection</span>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <!-- Indicateur scroll -->
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Défiler</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+
+</section>
+<!-- ═══════════ COLLECTION ═══════════ -->
+<section class="collection" id="collection">
+
+  <header class="collection__head">
+    <span class="collection__eyebrow">La sélection</span>
+    <h2 class="collection__title">Trouve <em>ta</em> pièce.</h2>
+    <p class="collection__intro">
+      Chaque pièce est unique — une fois vendue, elle ne reviendra pas.
+    </p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filtrer par catégorie"></nav>
+
+  <div class="grid" id="grid" aria-live="polite"></div>
+
+  <p class="collection__empty" id="empty" hidden>
+    Aucune pièce dans cette catégorie pour l'instant ✿
+  </p>
+
+</section>
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+
+  <!-- ─── Guide de commande ─── -->
+  <section class="guide">
+    <span class="guide__eyebrow">Comment commander</span>
+    <div class="guide__steps">
+      <div class="guide__step">
+        <span class="guide__num">Ⅰ</span>
+        <p>Repérez votre <em>coup de cœur</em>.</p>
+      </div>
+      <div class="guide__step">
+        <span class="guide__num">Ⅱ</span>
+        <p>Cliquez sur <em>Commander</em>.</p>
+      </div>
+      <div class="guide__step">
+        <span class="guide__num">Ⅲ</span>
+        <p>Envoyez le message pour la commande</p>
+      </div>
+    </div>
+    <a class="guide__link" href="https://wa.me/243960298459" target="_blank" rel="noopener">
+      Une question ? Écrivez-nous directement
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── Offres ─── -->
+  <section class="offers">
+
+    <div class="offers__vendors">
+      <span class="offers__eyebrow">Communauté</span>
+      <h3 class="offers__title">Vous avez des pièces à vendre&nbsp;?</h3>
+      <p class="offers__text">
+       Grâce Nak ouvre son catalogue aux vendeuses et friperies de la communauté.
+        Envoyez vos plus belles pièces pour la mise en ligne.
+      </p>
+      <a class="offers__link" href="https://wa.me/243903127825?text=Bonjour%2C%20je%20souhaite%20proposer%20mes%20pi%C3%A8ces." target="_blank" rel="noopener">
+        Proposer mes pièces sur WhatsApp
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="offers__studio">
+      <span class="offers__eyebrow">Studio</span>
+      <h3 class="offers__title">Votre boutique en ligne, clé en main.</h3>
+      <button class="studio-btn" id="openStudio" type="button">
+        <span>Créer ma boutique en ligne</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ─── Bas de footer ─── -->
+  <div class="site-footer__bottom">
+    <a href="#" class="site-footer__logo">
+    Ansima<em>Babeho</em></a>
+    <nav class="site-footer__nav" aria-label="Navigation de pied de page">
+      <a href="#collection">Collection</a>
+     
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="site-footer__legal">© 2026 siteweb Ansima Babeho</p>
+  </div>
+
+</footer>
+
+<!-- ═══════════ MODALE STUDIO — inchangée ═══════════ -->
+<div class="studio" id="studio" aria-hidden="true">
+  <div class="studio__overlay" data-close></div>
+
+  <div class="studio__card" role="dialog" aria-modal="true" aria-labelledby="studioTitle">
+    <button class="studio__close" data-close aria-label="Fermer">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <span class="studio__eyebrow">siteweb · Ansima Babeho</span>
+    <h2 class="studio__title" id="studioTitle">Une boutique en ligne qui vend pour vous.</h2>
+
+    <div class="studio__body">
+      <p>Je conçois des boutiques en ligne sur mesure, adaptées aux besoins réels de votre entreprise, boutique, magasin ou marque.
+      </p>
+      <p>Chaque projet est construit autour de votre activité : votre direction artistique, votre rythme de vente, vos clients.</p>
+      <p>De la direction artistique à la commande WhatsApp intégrée, jusqu'à la gestion simple au quotidien.</p>
+      <p>Vous vendez sans commission, sans intermédiaire, et vous gardez le contrôle total de votre image et de vos ventes.</p>
+    </div>
+
+    <a class="studio__cta" href="https://wa.me/243903127825?text=Bonjour%2C%20je%20souhaite%20discuter%20d%27un%20projet%20de%20boutique%20en%20ligne." target="_blank" rel="noopener">
+      <span>Discuter de votre projet sur WhatsApp</span>
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+
+    <p class="studio__note">Réponse sous 24h · Devis sur demande</p>
+  </div>
+</div>
+
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
